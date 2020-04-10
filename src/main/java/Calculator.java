@@ -11,7 +11,7 @@ public class Calculator {
     /**
      * Реализация калькулятора
      */
-    public static void Calculate() {
+    public static void calculate() {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
 
             System.out.printf("Напишите номер нужного действия:\n1. Сложение\n2. Вычитание\n3. Умножение\n4. Деление\n");
