@@ -36,4 +36,17 @@ public class OOPCalculatorTests {
         calculator.showResult();
         Assert.assertEquals(6969.0, calculator.getResult(), DELTA);
     }
+
+    @Test public void cantDivideByZero() {
+        Task5.Calculator calculator = new Calculator(777);
+        String expectedErrorMessage = "На ноль делить нельзя";
+        String actualErrorMessage = "";
+        try {
+            calculator.divide(0);
+        } catch (ArithmeticException e) {
+            actualErrorMessage = e.getMessage();
+        }
+
+        Assert.assertEquals(expectedErrorMessage, actualErrorMessage);
+    }
 }

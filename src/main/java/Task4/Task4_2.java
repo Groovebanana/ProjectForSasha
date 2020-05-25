@@ -9,8 +9,8 @@ public class Task4_2 {
         present.addSweet(new Chocolate("Alyonka", 40, 100, 3));
         present.addSweet(new Chocolate("Alpen Gold", 30, 80, 1));
 
-        present.getSumWeightInfo();
-        present.getSumPriceInfo();
-        present.getSweetsInfo();
+        present.showSumWeightInfo();
+        present.showSumPriceInfo();
+        present.showSweetsInfo();
     }
 }

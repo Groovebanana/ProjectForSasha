@@ -15,8 +15,8 @@ public class Chocolate extends Sweet {
     }
 
     @Override
-    public void ShowSweetInfo() {
-        System.out.printf("Название шоколада: %s; Вес шоколада: %.2f; Цена шоколада: %.2f; Горечь шоколада: %s\n", getName(), getWeight(), getPrice(), getDarknessLevel());
+    public String getSweetInfo() {
+        return String.format("Название шоколада: %s; Вес шоколада: %.2f; Цена шоколада: %.2f; Горечь шоколада: %s\n", getName(), getWeight(), getPrice(), getDarknessLevel());
 
     }
 }

@@ -14,7 +14,7 @@ public class Jellybean extends Sweet {
     }
 
     @Override
-    public void ShowSweetInfo() {
-        System.out.printf("Название жевательной конфеты: %s; Вес жевательной конфеты: %.2f; Цена жевательной конфеты: %.2f; Твердость жевательной конфеты: %d\n", getName(), getWeight(), getPrice(), getHardnessIndex());
+    public String getSweetInfo() {
+        return String.format("Название жевательной конфеты: %s; Вес жевательной конфеты: %.2f; Цена жевательной конфеты: %.2f; Твердость жевательной конфеты: %d\n", getName(), getWeight(), getPrice(), getHardnessIndex());
     }
 }

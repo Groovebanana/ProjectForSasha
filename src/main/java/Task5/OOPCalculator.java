@@ -44,12 +44,13 @@ public class OOPCalculator {
                         calc.multiply(b);
                         break;
                     case 4:
-                        if (b == 0.0) {
-                            System.out.println("На ноль делить нельзя!");
+                        try {
+                            calc.divide(b);
+                        } catch (ArithmeticException e) {
+                            System.out.println(e.getMessage());
                             System.out.println();
                             continue;
                         }
-                        calc.divide(b);
                         break;
                     default:
                         System.out.println("Действия под таким номером не существует");

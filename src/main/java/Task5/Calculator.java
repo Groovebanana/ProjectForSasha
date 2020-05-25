@@ -1,6 +1,6 @@
 package Task5;
 
-public class Calculator implements Calculatable{
+public class Calculator{
     private double a;
 
     public Calculator(double firstNumber) {
@@ -11,31 +11,33 @@ public class Calculator implements Calculatable{
         return a;
     }
 
-    @Override
+
     public void add(double b) {
         System.out.println(a + " + " + b);
         a += b;
     }
 
-    @Override
+
     public void substract(double b) {
         System.out.println(a + " - " + b);
         a -= b;
     }
 
-    @Override
+
     public void multiply(double b) {
         System.out.println(a + " * " + b);
         a *= b;
     }
 
-    @Override
+
     public void divide(double b) {
         System.out.println(a + " / " + b);
+        if (b==0)
+            throw new ArithmeticException("На ноль делить нельзя");
         a /= b;
     }
 
-    @Override
+
     public void showResult() {
         System.out.printf("Результат равен %.2f\n", a);
     }

@@ -24,5 +24,5 @@ public abstract class Sweet {
         return price;
     }
 
-    public abstract void ShowSweetInfo();
+    public abstract String getSweetInfo();
 }
